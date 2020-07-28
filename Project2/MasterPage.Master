@@ -1,0 +1,46 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MasterPage.master.vb" Inherits="Project2.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <asp:ContentPlaceHolder ID="title" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <title>
+    </title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class= "wrapper">
+         <div class="menu">
+        <ul>
+            <li class="navigation_first_item"><a href="Home.aspx">Home</a></li>
+            <li><a href="About.aspx">About</a></li>
+            <li><a href="contact .aspx">Content</a></li>
+            <li><a href="Register.aspx">Register</a></li>
+            <li><a href="logout.aspx">Logout</a></li>
+           
+        </ul>
+         </div>
+            <div class="clear"></div>
+            <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                </div>
+            <div class="clear">
+
+            </div>
+            <div class="footer">
+                <address>Tell:+252617061272  &nbsp gmail:MeymaHajji </address>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
